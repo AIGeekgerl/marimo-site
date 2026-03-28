@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МариМо — Курсы макияжа для себя</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        .hero-bg { background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Навигация -->
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-widest uppercase">МариМо</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+            <a href="#about" class="hover:text-pink-500">О курсе</a>
+            <a href="#program" class="hover:text-pink-500">Программа</a>
+            <a href="#price" class="hover:text-pink-500">Стоимость</a>
+        </div>
+        <a href="#book" class="bg-stone-900 text-white px-6 py-2 rounded-full text-sm hover:bg-stone-700 transition">Записаться</a>
+    </nav>
+
+    <!-- Hero Секция -->
+    <section class="hero-bg h-[80vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-light mb-6">Твой идеальный макияж <br><strong>каждый день</strong></h1>
+            <p class="text-lg mb-8 text-stone-600">Научим подчеркивать твою природную красоту за 15 минут без эффекта «маски».</p>
+            <a href="#book" class="inline-block bg-pink-400 text-white px-10 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-pink-500 transition">Хочу на курс</a>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="about" class="py-20 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+        <div>
+            <h3 class="text-xl font-semibold mb-4 italic">Разбор косметички</h3>
+            <p class="text-stone-500">Выбросим лишнее и научим пользоваться тем, что уже есть.</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4 italic">Индивидуальный подход</h3>
+            <p class="text-stone-500">Подбираем техники под твой тип кожи и форму лица.</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-4 italic">Практика 90%</h3>
+            <p class="text-stone-500">Ставим руку прямо на занятии под присмотром мастера.</p>
+        </div>
+    </section>
+
+    <!-- Программа -->
+    <section id="program" class="bg-white py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-light text-center mb-12 uppercase tracking-widest">Программа обучения</h2>
+            <div class="space-y-6">
+                <div class="border-b border-stone-100 pb-4">
+                    <span class="text-pink-400 font-bold mr-4">01</span> 
+                    <span class="text-xl">Подготовка кожи и ровный тон (Nude look)</span>
+                </div>
+                <div class="border-b border-stone-100 pb-4">
+                    <span class="text-pink-400 font-bold mr-4">02</span> 
+                    <span class="text-xl">Архитектура бровей и коррекция лица</span>
+                </div>
+                <div class="border-b border-stone-100 pb-4">
+                    <span class="text-pink-400 font-bold mr-4">03</span> 
+                    <span class="text-xl">Трансформация дневного макияжа в вечерний</span>
+                </div>
+                <div class="border-b border-stone-100 pb-4">
+                    <span class="text-pink-400 font-bold mr-4">04</span> 
+                    <span class="text-xl">Стрелки и яркие губы — секреты стойкости</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер / Контакты -->
+    <footer id="book" class="py-20 text-center bg-stone-900 text-stone-400">
+        <h2 class="text-2xl text-white mb-6">Записаться в МариМо</h2>
+        <p class="mb-8">Москва, ул. Красивая, д. 10 | +7 (999) 000-00-00</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="hover:text-white">Instagram</a>
+            <a href="#" class="hover:text-white">Telegram</a>
+            <a href="#" class="hover:text-white">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>
