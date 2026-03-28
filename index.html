@@ -9,23 +9,21 @@
     <style>
         body { font-family: 'Montserrat', sans-serif; }
         
-        /* Главный фон (Файл hero.jpg должен лежать на GitHub рядом с index.html!) */
+        /* Главный фон — используем ваш файл hero.jpg.jfif */
         .hero-bg { 
-            background: url('hero.jpg') no-repeat; 
+            background: url('hero.jpg.jfif') no-repeat; 
             background-size: cover; 
             background-position: center; 
             position: relative;
         }
         
-        /* Слой для читаемости текста: чуть затемняет фон */
         .hero-bg::before {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)); /* Мягкое затемнение */
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35));
         }
 
-        /* Поднимаем текст над слоем затемнения */
         .hero-container {
             position: relative;
             z-index: 10;
@@ -69,7 +67,7 @@
 
     <section id="about" class="py-20 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
         <div>
-            <img src="cosmetics.jpg" class="card-img shadow-md">
+            <img src="cosmetics.jpg.jfif" class="card-img shadow-md">
             <h3 class="text-xl font-semibold mb-2">Разбор косметички</h3>
             <p class="text-stone-500 text-sm">Выбросим лишнее и научим пользоваться тем, что уже есть.</p>
         </div>
@@ -79,7 +77,7 @@
             <p class="text-stone-500 text-sm">Подберем техники под твой тип кожи и форму лица.</p>
         </div>
         <div>
-            <img src="practice.jpg" class="card-img shadow-md">
+            <img src="practice.jpg.png" class="card-img shadow-md">
             <h3 class="text-xl font-semibold mb-2">Практика 90%</h3>
             <p class="text-stone-500 text-sm">Ставим руку прямо на занятии под присмотром мастера.</p>
         </div>
